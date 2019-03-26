@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FirstPage from './components/firstPage';
+import FirstPage from './components/FirstPage/FirstPage';
 
 
 class App extends Component {
