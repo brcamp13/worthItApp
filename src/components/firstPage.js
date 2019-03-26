@@ -16,14 +16,16 @@ const majorOptions = [
 ]
 
 
-const firstPage = () => (
+const FirstPage = () => (
     <span>
+        Is majoring in  {' '}
         <Dropdown
             inline
             options={majorOptions}
             defaultValue={majorOptions[0].value}
         />
+         worth it?
     </span>
 )
 
-export default firstPage;
+export default FirstPage;
