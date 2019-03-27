@@ -6,8 +6,8 @@ import { Dropdown, Button } from 'semantic-ui-react';
 const majorOptions = [
     {
         key: 'Computer Science', 
-        text: 'Computer science',
-        value: 'Computer science', 
+        text: 'Computer Science',
+        value: 'Computer Science', 
     }, 
     {
         key: 'Communications', 
@@ -24,9 +24,13 @@ const FirstPage = () => (
         left: '50%', 
         top: '50%',
         transform: 'translate(-50%, -50%)',
+        textAlign: 'center',
     }}>
 
-        <div>
+        <div style={{
+            fontSize: '24px',
+            fontFamily: 'Roboto Slab',
+        }}>
             <span>
                 Is majoring in  {' '}
                 <Dropdown
@@ -38,8 +42,12 @@ const FirstPage = () => (
             </span>
         </div>
 
-        <div>
-            <Button color='blue'>Find Out</Button>
+        <div style={{
+            textAlign: 'center',
+            paddingTop: '2.5em',
+            fontFamily: 'Roboto Slab',
+        }}>
+            <Button color='yellow'>Find Out</Button>
         </div>
         
     </div>
