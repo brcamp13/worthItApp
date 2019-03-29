@@ -1,6 +1,8 @@
 import React from 'react';
 import { Dropdown, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -28,28 +30,32 @@ const FirstPage = () => (
         textAlign: 'center',
     }}>
 
-        <div style={{
-            fontSize: '24px',
-            fontFamily: 'Roboto Slab',
-        }}>
-            <span>
-                Is majoring in  {' '}
-                <Dropdown
-                    inline
-                    options={majorOptions}
-                    defaultValue={majorOptions[0].value}
-                />
-                worth it?
-            </span>
-        </div>
+        <Flip top>
+            <div style={{
+                fontSize: '24px',
+                fontFamily: 'Roboto Slab',
+            }}>
+                <span>
+                    Is majoring in  {' '}
+                    <Dropdown
+                        inline
+                        options={majorOptions}
+                        defaultValue={majorOptions[0].value}
+                    />
+                    worth it?
+                </span>
+            </div>
+        </Flip>
 
-        <div style={{
-            textAlign: 'center',
-            paddingTop: '2.5em',
-            fontFamily: 'Roboto Slab',
-        }}>
-            <Link to="/secondPage"><Button color='yellow'>Find Out</Button></Link>
-        </div>
+        <Fade bottom>
+            <div style={{
+                textAlign: 'center',
+                paddingTop: '2.5em',
+                fontFamily: 'Roboto Slab',
+            }}>
+                <Link to="/secondPage"><Button color='yellow'>Find Out</Button></Link>
+            </div>
+        </Fade>
         
     </div>
 
