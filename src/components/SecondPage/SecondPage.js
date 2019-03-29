@@ -3,7 +3,7 @@ import React from 'react';
 const SecondPage = () => (
 
     <div>
-        <h1>Second Page</h1>
+        <h1>Sup G</h1>
     </div>
 )
 

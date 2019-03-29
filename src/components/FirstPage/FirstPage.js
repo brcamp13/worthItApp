@@ -2,10 +2,9 @@ import React from 'react';
 import { Dropdown, Button } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
 
 
-
+// List of all dropdown choices
 const majorOptions = [
     {
         key: 'Computer Science', 
@@ -20,6 +19,7 @@ const majorOptions = [
 ]
 
 
+// Home page
 const FirstPage = () => (
 
     <div style={{
@@ -47,15 +47,14 @@ const FirstPage = () => (
             </div>
         </Flip>
 
-        <Fade bottom>
-            <div style={{
-                textAlign: 'center',
-                paddingTop: '2.5em',
-                fontFamily: 'Roboto Slab',
-            }}>
-                <Link to="/secondPage"><Button color='yellow'>Find Out</Button></Link>
-            </div>
-        </Fade>
+        {/* Would have animation here, but covered dropdown */}
+        <div style={{
+            textAlign: 'center',
+            paddingTop: '2.5em',
+            fontFamily: 'Roboto Slab',
+        }}>
+            <Link to="/secondPage"><Button color='yellow'>Find Out</Button></Link>
+        </div>
         
     </div>
 
