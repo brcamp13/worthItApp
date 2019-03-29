@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dropdown, Button } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -47,7 +48,7 @@ const FirstPage = () => (
             paddingTop: '2.5em',
             fontFamily: 'Roboto Slab',
         }}>
-            <Button color='yellow'>Find Out</Button>
+            <Link to="/secondPage"><Button color='yellow'>Find Out</Button></Link>
         </div>
         
     </div>
