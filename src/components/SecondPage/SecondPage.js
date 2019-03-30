@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 const SecondPage = () => (
 
-    <div>
+    <div style={{
+        verticalAlign: 'center',
+    }}>
         <Grid celled>
 
             <Grid.Row>
