@@ -3,15 +3,15 @@ import React from 'react';
 
 class SecondPage extends React.Component {
 
-    componentDidMount () {
+    constructor(props) {
+        super(props); 
         this.info = this.props.location.state
-        console.log(this.info.majorSelection)
     }
 
     render() {
         return (
             <div>
-                HI
+                <p>Don't major in { this.info.majorSelection }</p>
             </div>
         )
     }

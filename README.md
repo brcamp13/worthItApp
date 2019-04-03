@@ -1,5 +1,6 @@
 ### To-Do: 
 - [x] Pass dropdown selection from first page to second page
+- [ ] Make the site not crash if you refresh second page (have initialized state)
 - [ ] Format the second page
 - [ ] Test the entire app flow from beginning to end
 - [ ] Better style the first page
