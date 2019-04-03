@@ -20,44 +20,71 @@ const majorOptions = [
 
 
 // Home page
-const FirstPage = () => (
+class FirstPage extends React.Component {
 
-    <div style={{
-        position: 'absolute', 
-        left: '50%', 
-        top: '50%',
-        transform: 'translate(-50%, -50%)',
-        textAlign: 'center',
-    }}>
+    constructor(props) {
+        super(props); 
+        this.state = { dropDownSelection: "Computer Science"};
+        this.getSelection = this.getSelection.bind(this);
+    }
 
-        <Flip top>
+    //Get the selection from the dropdown menu and update the state
+    getSelection = (e, data) => {
+        console.log(data.value);
+        this.setState({ dropDownSelection: data.value });
+    }
+
+    render() {
+        return(
             <div style={{
-                fontSize: '24px',
-                fontFamily: 'Roboto Slab',
+                position: 'absolute', 
+                left: '50%', 
+                top: '50%',
+                transform: 'translate(-50%, -50%)',
+                textAlign: 'center',
             }}>
-                <span>
-                    Is majoring in  {' '}
-                    <Dropdown
-                        inline
-                        options={majorOptions}
-                        defaultValue={majorOptions[0].value}
-                    />
-                    worth it?
-                </span>
+
+                <Flip top>
+                    <div style={{
+                        fontSize: '24px',
+                        fontFamily: 'Roboto Slab',
+                    }}>
+                        <span>
+                            Is majoring in  {' '}
+                            <Dropdown
+                                inline
+                                options={majorOptions}
+                                defaultValue={majorOptions[0].value}
+                                onChange={this.getSelection}
+                            />
+                            worth it?
+                        </span>
+                    </div>
+                </Flip>
+
+                {/* Would have animation here, but covered dropdown */}
+                <div style={{
+                    textAlign: 'center',
+                    paddingTop: '2.5em',
+                    fontFamily: 'Roboto Slab',
+                }}>
+
+                    <Link to={{
+                        pathname: '/secondPage', 
+                        state: {
+                            majorSelection: this.state.dropDownSelection
+                        }
+                    }}>
+
+                    <Button color='yellow'>Find Out</Button>
+
+                    </Link>
+
+                </div>
+                
             </div>
-        </Flip>
-
-        {/* Would have animation here, but covered dropdown */}
-        <div style={{
-            textAlign: 'center',
-            paddingTop: '2.5em',
-            fontFamily: 'Roboto Slab',
-        }}>
-            <Link to="/secondPage"><Button color='yellow'>Find Out</Button></Link>
-        </div>
-        
-    </div>
-
-)
+        )
+    }
+}
 
 export default FirstPage;
