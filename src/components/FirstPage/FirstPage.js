@@ -66,7 +66,6 @@ class FirstPage extends React.Component {
                 <div style={{
                     textAlign: 'center',
                     paddingTop: '2.5em',
-                    fontFamily: 'Roboto Slab',
                 }}>
 
                     <Link to={{
