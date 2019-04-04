@@ -62,7 +62,6 @@ class FirstPage extends React.Component {
                     </div>
                 </Flip>
 
-                {/* Would have animation here, but covered dropdown */}
                 <div style={{
                     textAlign: 'center',
                     paddingTop: '2.5em',
