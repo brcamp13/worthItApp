@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid } from 'semantic-ui-react'
 
 
 //Contains info about each major
@@ -12,6 +13,22 @@ const majorInfo = [
     }, 
 ]
 
+const titleStyle = {
+    fontFamily: 'Roboto Slab', 
+    fontSize: '1.25em',
+}
+
+const containerStyle = {
+    //TODO
+}
+
+const numberStyle = {
+    //TODO 
+}
+
+const paragraphStyle = {
+    //TODO
+}
 
 class SecondPage extends React.Component {
 
@@ -25,12 +42,60 @@ class SecondPage extends React.Component {
 
     render() {
         return (
-            <div>
-                <p>{ this.major.name }</p>
-                <p>{ this.major.annualGraduates }</p>
-                <p>{ this.major.unemploymentRate }</p>
-                <p>{ this.major.averageSalary }</p>
-                <p>{ this.major.industryGrowth }</p>
+            <div style={{
+                paddingTop: '12em',
+            }}>
+                <Grid>
+
+                    <Grid.Row>
+
+                        <Grid.Column width={4}>
+                            <p style={titleStyle}><strong>By the numbers:</strong></p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                    </Grid.Row>
+
+                    <Grid.Row>
+
+                        <Grid.Column width={4}>
+                            <p style={titleStyle}><strong>Our opinion:</strong></p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                        <Grid.Column width={3}>
+                            <p>69</p>
+                        </Grid.Column>
+
+                    </Grid.Row>
+
+                </Grid>
             </div>
         )
     }
