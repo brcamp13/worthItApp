@@ -15,4 +15,8 @@
 ## Make the app entirely single-page (Which content is displayed depends on a "buttonWasPressed" conditional, or similar)
 ## Doing so would make a transition effect much easier, and would probably make the app not crash upon refreshing
 ## It would also make obtaining the dropdown selection and using it in the second content block much easier (no more React router trickery)
+## To extend upon this, you should still have a first page and second page component. Just place the conditional within app.js
+## So, if button isn't pressed, display first page. If button is pressed, display second page. Then on second page, have another button ("take me home") that reverses the button conditional again (so it will then "not be pressed") and you'll go back to the first page
+## Refreshing the page will re-initialize the state, meaning buttonIsPressed will be false and the first page will be displayed
+## Sweet! Doing this later tonight
 
