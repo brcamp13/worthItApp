@@ -11,3 +11,8 @@
 - [ ] Deploy
 - [ ] Ads/Google analytics?
 
+### Ideas: 
+## Make the app entirely single-page (Which content is displayed depends on a "buttonWasPressed" conditional, or similar)
+## Doing so would make a transition effect much easier, and would probably make the app not crash upon refreshing
+## It would also make obtaining the dropdown selection and using it in the second content block much easier (no more React router trickery)
+
