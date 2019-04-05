@@ -53,7 +53,7 @@ const containerStyle = {
     marginTop: '3rem'
 }
 
-const SecondPage = ({ onButtonPress, majorSelection }) => {
+const SecondPage = ({ onGoHomePress, majorSelection }) => {
 
     return (
         <div>
@@ -77,22 +77,22 @@ const SecondPage = ({ onButtonPress, majorSelection }) => {
                         <Col xs={12} md={2} align='center'>
                             <span style={smallTitleStyle}><strong>Annual Grads</strong></span>
                             <br></br>
-                            <span style={numberStyle}><strong><em>56,699</em></strong></span>
+                            <span style={numberStyle}><strong><em>{majorSelection.annualGraduates}</em></strong></span>
                         </Col>
                         <Col xs={12} md={2} align='center'>
                             <span style={smallTitleStyle}><strong>Unemp. Rate</strong></span>
                             <br></br>
-                            <span style={numberStyle}><strong><em>3.5%</em></strong></span>
+                            <span style={numberStyle}><strong><em>{majorSelection.unemploymentRate}</em></strong></span>
                         </Col>
                         <Col xs={12} md={2} align='center'>
                             <span style={smallTitleStyle}><strong>Avg. Salary</strong></span>
                             <br></br>
-                            <span style={numberStyle}><strong><em>$85,000</em></strong></span>
+                            <span style={numberStyle}><strong><em>{majorSelection.averageSalary}</em></strong></span>
                         </Col>
                         <Col xs={12} md={2} align='center'>
                             <span style={smallTitleStyle}><strong>Sector Growth*</strong></span>
                             <br></br>
-                            <span style={numberStyle}><strong><em>25%</em></strong></span>
+                            <span style={numberStyle}><strong><em>{majorSelection.industryGrowth}</em></strong></span>
                         </Col>
                     </Row>
                 </Fade>
@@ -105,14 +105,9 @@ const SecondPage = ({ onButtonPress, majorSelection }) => {
                             <span style={titleStyle}><strong><u>Our Opinion: </u></strong></span>
                         </Col>
                         <Col xs={12} md={6} align='center'>
-                            <span style={testStyle}><strong>Worth it</strong></span>
+                            <span style={testStyle}><strong>{majorSelection.verdict}</strong></span>
                             <br></br>
-                            <p style={paragraphStyle}>
-                                Statistically, getting a job shouldn't be too difficult assuming 
-                                you didn't just slip through the cracks without learning anything at school.
-                                You'll be making a significant amount of money which will be especially good
-                                if you have student loans to pay off.
-                            </p>
+                            <p style={paragraphStyle}>{majorSelection.verdictParagraph}</p>
                         </Col>
                     </Row>
                 </Fade>
@@ -123,7 +118,7 @@ const SecondPage = ({ onButtonPress, majorSelection }) => {
                     <Row>
                         <Button 
                         color='yellow' 
-                        onClick={onButtonPress} 
+                        onClick={onGoHomePress} 
                         style={buttonStyle}>
                         Take me back
                         </Button> 

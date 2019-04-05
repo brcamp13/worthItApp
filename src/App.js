@@ -3,13 +3,19 @@ import FirstPage from './components/FirstPage/FirstPage';
 import SecondPage from './components/SecondPage/SecondPage';
 
 
-const initialState = {
-    buttonPressed: false, 
-    dropDownSelection: "Computer Science", 
-    majorObject: {
-
-    },
-  }
+// const initialState = {
+//     buttonPressed: false, 
+//     dropDownSelection: "Computer Science", 
+//     majorObject: {
+//         name: '',
+//         annualGraduates: '', 
+//         unemploymentRate: '', 
+//         averageSalary: '', 
+//         industryGrowth: '',
+//         verdict: '',
+//         verdictParagraph: ''
+//     }
+//   }
 
 
 class App extends Component {
@@ -55,10 +61,17 @@ class App extends Component {
   getSelection = (e, data) => {
 
     this.setState({ dropDownSelection: data.value });
-    let result = this.majorInfo.find(obj => {
-      return obj.name === this.state.dropDownSelection
+    const result = this.majorInfo.find(obj => {
+      return obj.name === data.value
     })
-    this.setState({ majorObject: result})
+    this.setState({ majorObject: {
+      name: result.name, 
+      annualGraduates: result.annualGraduates, 
+      unemploymentRate: result.unemploymentRate, 
+      averageSalary: result.averageSalary, 
+      verdict: result.verdict, 
+      verdictParagraph: result.verdictParagraph
+    }})
     console.log(this.state.majorObject.verdictParagraph)
 
   }
@@ -70,11 +83,42 @@ class App extends Component {
 
   }
 
-  constructor() {
-    super();
-    this.state = initialState
+
+  onGoHomePress = (e) => {
+    this.setState({
+      buttonPressed: !this.state.buttonPressed, 
+      dropDownSelection: "Computer Science", 
+      majorObject: {
+        name: "Computer Science", 
+        annualGraduates: "100", 
+        unemploymentRate: "2.5%", 
+        averageSalary: "$69,000", 
+        industryGrowth: "24%",
+        verdict: "Don't do it",
+        verdictParagraph: "It's a stupid idea so don't do it." 
+      }
+    })
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      buttonPressed: false, 
+      dropDownSelection: "Computer Science", 
+      majorObject: {
+        name: "Computer Science", 
+        annualGraduates: "100", 
+        unemploymentRate: "2.5%", 
+        averageSalary: "$69,000", 
+        industryGrowth: "24%",
+        verdict: "Don't do it",
+        verdictParagraph: "It's a stupid idea so don't do it." 
+      }
+    }
     this.getSelection = this.getSelection.bind(this)
     this.onButtonPress = this.onButtonPress.bind(this)
+    this.onGoHomePress = this.onGoHomePress.bind(this)
+    console.log(this.state.majorObject.name)
   }
 
   render() {
@@ -93,7 +137,7 @@ class App extends Component {
 
           : <div>
             <SecondPage 
-              onButtonPress={this.onButtonPress}
+              onGoHomePress={this.onGoHomePress}
               majorSelection={this.state.majorObject}
             />
           </div>
