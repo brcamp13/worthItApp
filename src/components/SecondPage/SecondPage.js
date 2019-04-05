@@ -53,7 +53,7 @@ const containerStyle = {
     marginTop: '3rem'
 }
 
-const SecondPage = ({ onButtonPress }) => {
+const SecondPage = ({ onButtonPress, majorSelection }) => {
 
     return (
         <div>
@@ -62,7 +62,7 @@ const SecondPage = ({ onButtonPress }) => {
                 <Fade top>
                     <Row style={majorTextRowStyle}>
                         <Col align='center'>
-                            <span style={majorTextStyle}><strong>Computer Science</strong></span>
+                            <span style={majorTextStyle}><strong>{majorSelection.name}</strong></span>
                         </Col>
                     </Row>
                 </Fade>

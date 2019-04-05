@@ -6,6 +6,9 @@ import SecondPage from './components/SecondPage/SecondPage';
 const initialState = {
     buttonPressed: false, 
     dropDownSelection: "Computer Science", 
+    majorObject: {
+
+    },
   }
 
 
@@ -31,11 +34,20 @@ class App extends Component {
     {
         name: "Computer Science", 
         annualGraduates: "100", 
-        unemploymentRate: "2.5", 
+        unemploymentRate: "2.5%", 
         averageSalary: "$69,000", 
         industryGrowth: "24%",
         verdict: "Don't do it",
         verdictParagraph: "It's a stupid idea so don't do it." 
+    },
+    {
+        name: "Communications", 
+        annualGraduates: "200", 
+        unemploymentRate: "69%", 
+        averageSalary: "$69,000", 
+        industryGrowth: "24%",
+        verdict: "Do it",
+        verdictParagraph: "It's not a stupid idea so don't do it." 
     }, 
   ]
 
@@ -43,6 +55,11 @@ class App extends Component {
   getSelection = (e, data) => {
 
     this.setState({ dropDownSelection: data.value });
+    let result = this.majorInfo.find(obj => {
+      return obj.name === this.state.dropDownSelection
+    })
+    this.setState({ majorObject: result})
+    console.log(this.state.majorObject.verdictParagraph)
 
   }
 
@@ -77,6 +94,7 @@ class App extends Component {
           : <div>
             <SecondPage 
               onButtonPress={this.onButtonPress}
+              majorSelection={this.state.majorObject}
             />
           </div>
 
