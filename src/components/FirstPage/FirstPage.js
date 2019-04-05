@@ -3,6 +3,13 @@ import { Dropdown, Button } from 'semantic-ui-react';
 import Flip from 'react-reveal/Flip';
 
 
+
+
+const buttonStyle = {
+    fontFamily: 'Open Sans'
+}
+
+
 // Home page
 const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
 
@@ -38,7 +45,12 @@ const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
                 paddingTop: '2.5em',
             }}>
 
-                <Button color='yellow' onClick={onButtonPress}>Find Out</Button>
+                <Button 
+                color='yellow' 
+                onClick={onButtonPress} 
+                style={buttonStyle}>
+                Find Out
+                </Button>
 
             </div>
             

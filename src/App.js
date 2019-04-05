@@ -6,17 +6,12 @@ import SecondPage from './components/SecondPage/SecondPage';
 const initialState = {
     buttonPressed: false, 
     dropDownSelection: "Computer Science", 
-    initialSelection: {
-      key: 'Computer Science', 
-      text: 'Computer Science', 
-      value: 'Computer Science'
-    }
   }
 
 
 class App extends Component {
 
-      // List of all dropdown choices
+  // List of all dropdown choices
   majorOptions = [
     {
         key: 'Computer Science', 
@@ -35,34 +30,41 @@ class App extends Component {
   majorInfo = [
     {
         name: "Computer Science", 
-        annualGraduates: 100, 
-        unemploymentRate: 2.5, 
-        averageSalary: 69000, 
-        industryGrowth: 24, 
+        annualGraduates: "100", 
+        unemploymentRate: "2.5", 
+        averageSalary: "$69,000", 
+        industryGrowth: "24%",
+        verdict: "Don't do it",
+        verdictParagraph: "It's a stupid idea so don't do it." 
     }, 
   ]
 
   //Get the selection from the dropdown menu in firstpage and update the state
   getSelection = (e, data) => {
-    console.log(data.value);
+
     this.setState({ dropDownSelection: data.value });
+
   }
 
+  //Update the buttonPressed state which subsequently changes which page is displayed
   onButtonPress = (e) => {
+
     this.setState({ buttonPressed: !this.state.buttonPressed})
-    console.log(this.state.buttonPressed)
+
   }
 
   constructor() {
     super();
     this.state = initialState
+    this.getSelection = this.getSelection.bind(this)
+    this.onButtonPress = this.onButtonPress.bind(this)
   }
 
   render() {
     return (
-      <div className="App">
+      <div>
 
-        { this.state.buttonPressed === false
+        { !this.state.buttonPressed
 
          ? <div>
           <FirstPage 
