@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dropdown, Button } from 'semantic-ui-react';
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -14,6 +15,7 @@ const buttonStyle = {
 const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
 
     return(
+
         <div style={{
             position: 'absolute', 
             left: '50%', 
@@ -22,37 +24,39 @@ const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
             textAlign: 'center',
         }}>
 
-            <Flip top>
-                <div style={{
-                    fontSize: '24px',
-                    fontFamily: 'Roboto Slab',
-                }}>
-                    <span>
-                        Is majoring in  {' '}
-                        <Dropdown
-                            inline
-                            options={majorOptions}
-                            defaultValue={majorOptions[0].value}
-                            onChange={dropDownSelection}
-                        />
-                        worth it?
-                    </span>
+            <Fade bottom> 
+                <div>
+                    <div style={{
+                        fontSize: '24px',
+                        fontFamily: 'Roboto Slab',
+                    }}>
+                        <span>
+                            Is majoring in  {' '}
+                            <Dropdown
+                                inline
+                                options={majorOptions}
+                                defaultValue={majorOptions[0].value}
+                                onChange={dropDownSelection}
+                            />
+                            worth it?
+                        </span>
+                    </div>
+
+                    <div style={{
+                        textAlign: 'center',
+                        paddingTop: '2.5em',
+                    }}>
+
+                        <Button 
+                        color='yellow' 
+                        onClick={onButtonPress} 
+                        style={buttonStyle}>
+                        Find Out
+                        </Button>
+
+                    </div>
                 </div>
-            </Flip>
-
-            <div style={{
-                textAlign: 'center',
-                paddingTop: '2.5em',
-            }}>
-
-                <Button 
-                color='yellow' 
-                onClick={onButtonPress} 
-                style={buttonStyle}>
-                Find Out
-                </Button>
-
-            </div>
+            </Fade>
             
         </div>
     )
