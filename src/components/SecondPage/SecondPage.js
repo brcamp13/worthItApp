@@ -16,6 +16,21 @@ const smallTitleStyle = {
     fontSize: '1.3rem'
 }
 
+const testStyle = {
+    fontFamily: 'Roboto Slab', 
+    fontSize: '1.3rem', 
+    color: '#00FF00'
+}
+
+const majorTextStyle = {
+    fontFamily: 'Roboto Slab',
+    fontSize: '3em', 
+}
+
+const majorTextRowStyle = {
+    marginBottom: '4rem'
+}
+
 const numberStyle = {
     fontFamily: 'Open Sans', 
     fontSize: '1.1rem', 
@@ -45,9 +60,19 @@ const SecondPage = ({ onButtonPress }) => {
             <Container style={containerStyle}>
 
                 <Fade top>
+                    <Row style={majorTextRowStyle}>
+                        <Col align='center'>
+                            <span style={majorTextStyle}><strong>Computer Science</strong></span>
+                        </Col>
+                    </Row>
+                </Fade>
+
+                <hr></hr>
+
+                <Fade top>
                     <Row>
                         <Col xs={12} md={4} align='center'>
-                            <span style={titleStyle}><strong>By The Numbers:</strong></span>
+                            <span style={titleStyle}><strong><u>By The Numbers:</u></strong></span>
                         </Col>
                         <Col xs={12} md={2} align='center'>
                             <span style={smallTitleStyle}><strong>Annual Grads</strong></span>
@@ -72,29 +97,35 @@ const SecondPage = ({ onButtonPress }) => {
                     </Row>
                 </Fade>
                 
-                <br></br>
+                <hr></hr>
 
                 <Fade top>
                     <Row>
                         <Col xs={12} md={4} align='center'>
-                            <span style={titleStyle}><strong>Our Opinion: </strong></span>
+                            <span style={titleStyle}><strong><u>Our Opinion: </u></strong></span>
                         </Col>
                         <Col xs={12} md={6} align='center'>
-                            <span style={smallTitleStyle}><strong>Not worth it</strong></span>
+                            <span style={testStyle}><strong>Worth it</strong></span>
                             <br></br>
                             <p style={paragraphStyle}>
-                                Don't major in it, you know it's a really stupid idea.
+                                Statistically, getting a job shouldn't be too difficult assuming 
+                                you didn't just slip through the cracks without learning anything at school.
+                                You'll be making a significant amount of money which will be especially good
+                                if you have student loans to pay off.
                             </p>
                         </Col>
                     </Row>
                 </Fade>
+
+                <hr></hr>
 
                 <Fade top>
                     <Row>
                         <Button 
                         color='yellow' 
                         onClick={onButtonPress} 
-                        style={buttonStyle}>Take me back
+                        style={buttonStyle}>
+                        Take me back
                         </Button> 
                     </Row>
                 </Fade>
