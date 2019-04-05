@@ -3,20 +3,6 @@ import FirstPage from './components/FirstPage/FirstPage';
 import SecondPage from './components/SecondPage/SecondPage';
 
 
-// const initialState = {
-//     buttonPressed: false, 
-//     dropDownSelection: "Computer Science", 
-//     majorObject: {
-//         name: '',
-//         annualGraduates: '', 
-//         unemploymentRate: '', 
-//         averageSalary: '', 
-//         industryGrowth: '',
-//         verdict: '',
-//         verdictParagraph: ''
-//     }
-//   }
-
 
 class App extends Component {
 
@@ -69,6 +55,7 @@ class App extends Component {
       annualGraduates: result.annualGraduates, 
       unemploymentRate: result.unemploymentRate, 
       averageSalary: result.averageSalary, 
+      industryGrowth: result.industryGrowth,
       verdict: result.verdict, 
       verdictParagraph: result.verdictParagraph
     }})
