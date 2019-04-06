@@ -72,7 +72,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                 <Fade top>
                     <Row>
                         <Col xs={12} md={4} align='center'>
-                            <span style={titleStyle}><strong><u>By The Numbers:</u></strong></span>
+                            <span style={titleStyle}><strong><em>By The Numbers:</em></strong></span>
                         </Col>
                         <Col xs={12} md={2} align='center'>
                             <span style={smallTitleStyle}><strong>Annual Grads</strong></span>
@@ -102,7 +102,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                 <Fade top>
                     <Row>
                         <Col xs={12} md={4} align='center'>
-                            <span style={titleStyle}><strong><u>Our Opinion: </u></strong></span>
+                            <span style={titleStyle}><strong><em>Our Opinion: </em></strong></span>
                         </Col>
                         <Col xs={12} md={6} align='center'>
                             <span style={testStyle}><strong>{majorSelection.verdict}</strong></span>

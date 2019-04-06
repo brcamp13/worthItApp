@@ -27,7 +27,7 @@ const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
             <Fade bottom> 
                 <div>
                     <div style={{
-                        fontSize: '24px',
+                        fontSize: '2rem',
                         fontFamily: 'Roboto Slab',
                     }}>
                         <span>
