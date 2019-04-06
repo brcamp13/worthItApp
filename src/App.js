@@ -35,7 +35,7 @@ class App extends Component {
         averageSalary: "$69,000", 
         industryGrowth: "24%",
         verdict: "Not worth it",
-        verdictParagraph: "It's a stupid idea so don't do it." 
+        verdictParagraph: "Software development has the highest growth rate until 2026 and the salary is very high for only having a bachelor's degree. It may be difficult getting your 'foot in the door', but once you do, it should be smooth sailing and there should be ample opportunities" 
     },
     {
         name: "Communications", 
@@ -87,7 +87,7 @@ class App extends Component {
         averageSalary: "$69,000", 
         industryGrowth: "24%",
         verdict: "Not worth it",
-        verdictParagraph: "It's a stupid idea so don't do it." 
+        verdictParagraph: "Software development has the highest growth rate until 2026 and the salary is very high for only having a bachelor's degree. It may be difficult getting your 'foot in the door', but once you do, it should be smooth sailing and there should be ample opportunities" 
       }
     })
   }
@@ -104,7 +104,7 @@ class App extends Component {
         averageSalary: "$69,000", 
         industryGrowth: "24%",
         verdict: "Not worth it",
-        verdictParagraph: "It's a stupid idea so don't do it." 
+        verdictParagraph: "Software development has the highest growth rate until 2026 and the salary is very high for only having a bachelor's degree. It may be difficult getting your 'foot in the door', but once you do, it should be smooth sailing and there should be ample opportunities" 
       }
     }
     this.getSelection = this.getSelection.bind(this)

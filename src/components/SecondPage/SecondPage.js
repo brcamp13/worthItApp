@@ -50,7 +50,7 @@ const numberBoxStyle = {
 }
 
 const numberInnerBoxStyle = {
-    marginTop: '1.4rem'
+    marginTop: '1rem'
 }
 
 const paragraphStyle = {
@@ -62,12 +62,27 @@ const buttonStyle = {
     margin: '0 auto', 
     display: 'block',
     marginTop: '3rem',
-    marginBottom: '2rem',
+    marginBottom: '5rem',
     fontFamily: 'Open Sans'
 }
 
 const containerStyle = {
     marginTop: '3rem'
+}
+
+const hrStyle = {
+    backgroundColor: '#FFD700',
+    height: '1px', 
+    border: '0'
+}
+
+const verdictContainerStyle = {
+    borderRadius: '25px',
+    backgroundColor: 'rgba(255, 255, 255, 0.25)',
+    padding: '15px', 
+    width: '100%',
+    height: '85%',
+    marginTop: '2rem'
 }
 
 
@@ -99,7 +114,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
                                     <span style={smallTitleStyle}><strong>Annual Grads:</strong></span>
-                                    <hr></hr>
+                                    <hr style={hrStyle}></hr>
                                     <span style={numberStyle}><strong><em>{majorSelection.annualGraduates}</em></strong></span>
                                 </div>
                             </div>
@@ -108,7 +123,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
                                     <span style={smallTitleStyle}><strong>Unemp. Rate:</strong></span>
-                                    <hr></hr>
+                                    <hr style={hrStyle}></hr>
                                     <span style={numberStyle}><strong><em>{majorSelection.unemploymentRate}</em></strong></span>
                                 </div>
                             </div>
@@ -117,7 +132,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
                                     <span style={smallTitleStyle}><strong>Avg. Salary:</strong></span>
-                                    <hr></hr>
+                                    <hr style={hrStyle}></hr>
                                     <span style={numberStyle}><strong><em>{majorSelection.averageSalary}</em></strong></span>
                                 </div>
                             </div>
@@ -126,7 +141,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
                                     <span style={smallTitleStyle}><strong>Sector Growth:</strong></span>
-                                    <hr></hr>
+                                    <hr style={hrStyle}></hr>
                                     <span style={numberStyle}><strong><em>{majorSelection.industryGrowth}</em></strong></span>
                                 </div>
                             </div>
@@ -138,32 +153,25 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
 
                 <Fade top>
                     <Row style={numbersRowStyle}>
-                        <Col align='center'>
+                        <Col align='center' md={{ span: 4, offset: 4 }}>
                             <span style={titleStyle}><strong><em>Our Opinion: </em></strong></span>
+                            <div style={verdictContainerStyle}>
+                                <span style={verdictStyle}><strong>{majorSelection.verdict}</strong></span>
+                                <hr style={hrStyle}></hr>
+                                <p style={paragraphStyle}>{majorSelection.verdictParagraph}</p>
+                            </div>
                         </Col>
                     </Row>
                 </Fade>
 
-                <Fade top>
-                    <Row>
-                        <Col align='center'>
-                            <span style={verdictStyle}><strong>{majorSelection.verdict}</strong></span>
-                            <br></br>
-                            <p style={paragraphStyle}>{majorSelection.verdictParagraph}</p>
-                        </Col>
-                    </Row>
-                </Fade>
-
-                <Fade top>
-                    <Row>
-                        <Button 
-                        color='yellow' 
-                        onClick={onGoHomePress} 
-                        style={buttonStyle}>
-                        Take me back
-                        </Button> 
-                    </Row>
-                </Fade>
+                <Row>
+                    <Button 
+                    color='yellow' 
+                    onClick={onGoHomePress} 
+                    style={buttonStyle}>
+                    Take me back
+                    </Button> 
+                </Row>
     
             </Container>
         </div>
