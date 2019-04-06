@@ -17,17 +17,16 @@ const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
     return(
 
         <div style={{
-            position: 'absolute', 
-            left: '50%', 
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            textAlign: 'center',
+            textAlign: 'center', 
+            paddingTop: '17em', 
+            border: '1rem rounded black'
+            
         }}>
 
             <Fade bottom> 
                 <div>
                     <div style={{
-                        fontSize: '2rem',
+                        fontSize: '2.5rem',
                         fontFamily: 'Roboto Slab',
                     }}>
                         <span>

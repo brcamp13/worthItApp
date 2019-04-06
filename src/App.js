@@ -4,6 +4,11 @@ import SecondPage from './components/SecondPage/SecondPage';
 
 
 
+
+const appStyle = {
+  backgroundColor: '#31BFF4'
+}
+
 class App extends Component {
 
   // List of all dropdown choices
@@ -29,7 +34,7 @@ class App extends Component {
         unemploymentRate: "2.5%", 
         averageSalary: "$69,000", 
         industryGrowth: "24%",
-        verdict: "Don't do it",
+        verdict: "Not worth it",
         verdictParagraph: "It's a stupid idea so don't do it." 
     },
     {
@@ -38,7 +43,7 @@ class App extends Component {
         unemploymentRate: "69%", 
         averageSalary: "$69,000", 
         industryGrowth: "24%",
-        verdict: "Do it",
+        verdict: "Worth it",
         verdictParagraph: "It's not a stupid idea so don't do it." 
     }, 
   ]
@@ -81,7 +86,7 @@ class App extends Component {
         unemploymentRate: "2.5%", 
         averageSalary: "$69,000", 
         industryGrowth: "24%",
-        verdict: "Don't do it",
+        verdict: "Not worth it",
         verdictParagraph: "It's a stupid idea so don't do it." 
       }
     })
@@ -98,7 +103,7 @@ class App extends Component {
         unemploymentRate: "2.5%", 
         averageSalary: "$69,000", 
         industryGrowth: "24%",
-        verdict: "Don't do it",
+        verdict: "Not worth it",
         verdictParagraph: "It's a stupid idea so don't do it." 
       }
     }
@@ -114,7 +119,7 @@ class App extends Component {
 
         { !this.state.buttonPressed
 
-         ? <div>
+         ? <div style={appStyle}>
           <FirstPage 
               dropDownSelection={this.getSelection} 
               majorOptions={this.majorOptions}
@@ -122,7 +127,7 @@ class App extends Component {
             />
           </div>
 
-          : <div>
+          : <div style={appStyle}>
             <SecondPage 
               onGoHomePress={this.onGoHomePress}
               majorSelection={this.state.majorObject}

@@ -16,10 +16,9 @@ const smallTitleStyle = {
     fontSize: '1.3rem'
 }
 
-const testStyle = {
+const verdictStyle = {
     fontFamily: 'Roboto Slab', 
-    fontSize: '1.3rem', 
-    color: '#00FF00'
+    fontSize: '2.2rem',
 }
 
 const majorTextStyle = {
@@ -34,7 +33,7 @@ const majorTextRowStyle = {
 const numberStyle = {
     fontFamily: 'Open Sans', 
     fontSize: '1.1rem', 
-    color: '#FFD700'
+    color: '#FFD700', 
 }
 
 const paragraphStyle = {
@@ -53,6 +52,7 @@ const containerStyle = {
     marginTop: '3rem'
 }
 
+
 const SecondPage = ({ onGoHomePress, majorSelection }) => {
 
     return (
@@ -67,29 +67,32 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                     </Row>
                 </Fade>
 
-                <hr></hr>
+                <Fade top>
+                    <Row>
+                        <Col align='center'>
+                            <span style={titleStyle}><strong><em>By The Numbers:</em></strong></span>
+                        </Col>
+                    </Row>
+                </Fade>
 
                 <Fade top>
                     <Row>
-                        <Col xs={12} md={4} align='center'>
-                            <span style={titleStyle}><strong><em>By The Numbers:</em></strong></span>
-                        </Col>
-                        <Col xs={12} md={2} align='center'>
+                        <Col xs={12} md={3} align='center'>
                             <span style={smallTitleStyle}><strong>Annual Grads</strong></span>
                             <br></br>
                             <span style={numberStyle}><strong><em>{majorSelection.annualGraduates}</em></strong></span>
                         </Col>
-                        <Col xs={12} md={2} align='center'>
+                        <Col xs={12} md={3} align='center'>
                             <span style={smallTitleStyle}><strong>Unemp. Rate</strong></span>
                             <br></br>
                             <span style={numberStyle}><strong><em>{majorSelection.unemploymentRate}</em></strong></span>
                         </Col>
-                        <Col xs={12} md={2} align='center'>
+                        <Col xs={12} md={3} align='center'>
                             <span style={smallTitleStyle}><strong>Avg. Salary</strong></span>
                             <br></br>
                             <span style={numberStyle}><strong><em>{majorSelection.averageSalary}</em></strong></span>
                         </Col>
-                        <Col xs={12} md={2} align='center'>
+                        <Col xs={12} md={3} align='center'>
                             <span style={smallTitleStyle}><strong>Sector Growth*</strong></span>
                             <br></br>
                             <span style={numberStyle}><strong><em>{majorSelection.industryGrowth}</em></strong></span>
@@ -101,18 +104,21 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
 
                 <Fade top>
                     <Row>
-                        <Col xs={12} md={4} align='center'>
+                        <Col align='center'>
                             <span style={titleStyle}><strong><em>Our Opinion: </em></strong></span>
                         </Col>
-                        <Col xs={12} md={6} align='center'>
-                            <span style={testStyle}><strong>{majorSelection.verdict}</strong></span>
+                    </Row>
+                </Fade>
+
+                <Fade top>
+                    <Row>
+                        <Col align='center'>
+                            <span style={verdictStyle}><strong>{majorSelection.verdict}</strong></span>
                             <br></br>
                             <p style={paragraphStyle}>{majorSelection.verdictParagraph}</p>
                         </Col>
                     </Row>
                 </Fade>
-
-                <hr></hr>
 
                 <Fade top>
                     <Row>
