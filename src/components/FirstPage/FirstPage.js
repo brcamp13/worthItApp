@@ -1,6 +1,5 @@
 import React from 'react';
 import { Dropdown, Button } from 'semantic-ui-react';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
 
 

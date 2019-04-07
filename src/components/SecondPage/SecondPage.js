@@ -119,6 +119,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                                 </div>
                             </div>
                         </Col>
+
                         <Col xs={12} md={3} align='center'>
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
@@ -128,6 +129,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                                 </div>
                             </div>
                         </Col>
+
                         <Col xs={12} md={3} align='center'>
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
@@ -137,6 +139,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                                 </div>
                             </div>
                         </Col>
+
                         <Col xs={12} md={3} align='center'>
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>

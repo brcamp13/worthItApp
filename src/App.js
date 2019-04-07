@@ -119,7 +119,7 @@ class App extends Component {
 
         { !this.state.buttonPressed
 
-         ? <div style={appStyle}>
+         ? <div>
           <FirstPage 
               dropDownSelection={this.getSelection} 
               majorOptions={this.majorOptions}
@@ -127,7 +127,7 @@ class App extends Component {
             />
           </div>
 
-          : <div style={appStyle}>
+          : <div>
             <SecondPage 
               onGoHomePress={this.onGoHomePress}
               majorSelection={this.state.majorObject}
