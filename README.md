@@ -1,6 +1,6 @@
 # Worth it app
 
-## Ranking worthwhile-ness of majors based on an objective metric 
+## Ranking worthwhile-ness of majors based on an objective metric:
 
 | Major                        | Career Analzyed                       | Metric Score  |
 | -------------                |:-------------:                        | :-------------:|
@@ -9,11 +9,11 @@
 | Life & Physical Sciences     | Entire field                          | 21,187 |
 | Math & Stats                 | Actuary + Operations Research Analyst | 14,698 |
 | Engineering                  | Engineer (non-specific)               | 14,398 |
-| Business                     | Entire Sector                         | 14,096 |
+| Business                     | Entire field                          | 14,096 |
 | Architecture                 | Architect                             | 4,891 |
 | Foreign Languages            | Interpreter/Translator                | 3,098 |
-| Communications & Journalism  | Entire Sector                         | 1,759 |
-| Art                          | Entire Sector                         | 1,640 |
+| Communications & Journalism  | Entire field                          | 1,759 |
+| Art                          | Entire  field                         | 1,640 |
 | English Lit & Lang           | Technical Writer                      | 944 |
 | Agriculture & Nat. Resources | Agriculture & Food Scientists         | 527 |
 
