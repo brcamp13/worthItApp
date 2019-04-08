@@ -8,10 +8,12 @@
 - [x] Better style everything
 - [x] Transition effect when moving between pages
 - [x] Format for mobile and different-sized devices
-- [ ] Research information for most majors (or the most popular)
-- [ ] Add a footer noting source of statistics and a disclaimer regarding IVY league schools
+- [x] Research information for most majors (or the most popular)
+- [ ] Write logical, reasonable, fair verdicts for each major based primarily on the objective metrics you researched
+- [ ] Add the research information to the site
+- [ ] Add a footer noting source of statistics, disclaimer regarding school prestige, disclaimer about college degrees in general (on onenote page)
 - [ ] Add custom favicon
-- [ ] Derive an objective metric for determining the worth of a major (optional)
+- [ ] 
 - [ ] Deploy
 - [ ] Ads/Google analytics?
 
