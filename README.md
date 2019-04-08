@@ -18,11 +18,12 @@
 | Agriculture & Nat. Resources | Agriculture & Food Scientists         | 527 |
 
 [Career Statistics](https://www.bls.gov/ooh/home.htm)
+
 [College Major Statistics](https://nces.ed.gov/programs/digest/d17/tables/dt17_322.10.asp)
 
 ## How the metric was defined: 
 
-( ((new jobs 2016-2026) / 10) / (# of grads with major 2015-2016) ) * median salary (2017)
+(((new jobs 2016-2026) / 10) / (# of grads with major 2015-2016)) * median salary (2017)
 
 ### To-Do: 
 - [x] Pass dropdown selection from first page to second page
