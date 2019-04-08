@@ -17,13 +17,16 @@
 | English Lit & Lang           | Technical Writer                      | 944 |
 | Agriculture & Nat. Resources | Agriculture & Food Scientists         | 527 |
 
+**NOTE:** Statistics for majors that don't directly translate to a specific career have not been included in the objective metric table above. However, they are included on the website. These majors (philosophy, history, mythology, gender studies, etc.) can best be leveraged as proof of having a college degree, something that's becoming increasingly more necessary to get a non-laborious job. For most of these majors, a professional degree is required to pursue a career within the field.   
+
 [Career Statistics](https://www.bls.gov/ooh/home.htm)
 
 [College Major Statistics](https://nces.ed.gov/programs/digest/d17/tables/dt17_322.10.asp)
 
 ## How the metric was defined: 
 
-(((new jobs 2016-2026) / 10) / (# of grads with major 2015-2016)) * median salary (2017)
+**(((new jobs 2016-2026) / 10) / (# of grads with major 2015-2016)) * median salary (2017)**
+
 
 ### To-Do: 
 - [x] Pass dropdown selection from first page to second page
