@@ -1,23 +1,28 @@
-## Worth it app
+# Worth it app
 
+## Ranking worthwhile-ness of majors based on an objective metric 
 
-| Major           | Career Analzyed | Metric Score  |
-| -------------   |:-------------:  | :-------------:|
-| Computer Science| Software Developer | 48,640 |
-| Education       | Teacher        |   38,412 |
-| Life & Physical Sciences | Entire field | 21187 |
-| Math & Stats    | Actuary + Operations Research Analyst | 14698 |
-| Engineering     | Engineer (non-specific) | 14398 |
-| Business        | Entire Sector | 14096 |
-| Architecture    | Architect     | 4891  |
-| Foreign Languages | Interpreter/Translator | 3098 |
-| Communications & Journalism | Entire Sector | 1759 |
-| Art             | Entire Sector | 1640      |
-| English Lit & Lang | Technical Writer | 944 |
-| Agriculture & Nat. Resources | Agriculture & Food Scientists | 527 |
+| Major                        | Career Analzyed                       | Metric Score  |
+| -------------                |:-------------:                        | :-------------:|
+| Computer Science             | Software Developer                    | 48,640 |
+| Education                    | Teacher                               | 38,412 |
+| Life & Physical Sciences     | Entire field                          | 21,187 |
+| Math & Stats                 | Actuary + Operations Research Analyst | 14,698 |
+| Engineering                  | Engineer (non-specific)               | 14,398 |
+| Business                     | Entire Sector                         | 14,096 |
+| Architecture                 | Architect                             | 4,891 |
+| Foreign Languages            | Interpreter/Translator                | 3,098 |
+| Communications & Journalism  | Entire Sector                         | 1,759 |
+| Art                          | Entire Sector                         | 1,640 |
+| English Lit & Lang           | Technical Writer                      | 944 |
+| Agriculture & Nat. Resources | Agriculture & Food Scientists         | 527 |
 
+[Career Statistics](https://www.bls.gov/ooh/home.htm)
+[College Major Statistics](https://nces.ed.gov/programs/digest/d17/tables/dt17_322.10.asp)
 
+## How the metric was defined: 
 
+( ((new jobs 2016-2026) / 10) / (# of grads with major 2015-2016) ) * median salary (2017)
 
 ### To-Do: 
 - [x] Pass dropdown selection from first page to second page
