@@ -13,7 +13,6 @@
 - [ ] Add the research information to the site
 - [ ] Add a footer noting source of statistics, disclaimer regarding school prestige, disclaimer about college degrees in general (on onenote page)
 - [ ] Add custom favicon
-- [ ] 
 - [ ] Deploy
 - [ ] Ads/Google analytics?
 
