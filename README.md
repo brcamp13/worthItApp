@@ -1,6 +1,6 @@
 # Worth it app
 
-## Ranking worthwhile-ness of majors based on an objective metric:
+## Ranking worthwhile-ness of bachelor's degrees based on an objective metric:
 
 | Major                        | Career Analzyed                       | Metric Score  |
 | -------------                |:-------------:                        | :-------------:|
