@@ -12,7 +12,7 @@
 | Business                     | Entire field                          | 14,096 |
 | Architecture                 | Architect                             | 4,891 |
 | Foreign Languages            | Interpreter/Translator                | 3,098 |
-| Communications & Journalism  | Entire field                          | 1,759 |
+| Communications & Journalism  | Entire field                          | 2,629 |
 | Art                          | Entire  field                         | 1,640 |
 | English Lit & Lang           | Technical Writer                      | 944 |
 | Agriculture & Nat. Resources | Agriculture & Food Scientists         | 527 |

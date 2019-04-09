@@ -32,8 +32,9 @@ const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
                             Is majoring in  {' '}
                             <Dropdown
                                 inline
+                                scrolling
                                 options={majorOptions}
-                                defaultValue={majorOptions[0].value}
+                                defaultValue={majorOptions[5].value}
                                 onChange={dropDownSelection}
                             />
                             worth it?

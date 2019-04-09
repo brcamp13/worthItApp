@@ -103,13 +103,24 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                 <Fade top>
                     <Row style={numbersRowStyle}>
                         <Col align='center'>
-                            <span style={titleStyle}><strong><em>By The Numbers:</em></strong></span>
+                            <span style={titleStyle}><strong><em>Analysis:</em></strong></span>
                         </Col>
                     </Row>
                 </Fade>
 
                 <Fade top>
                     <Row>
+
+                        <Col xs={12} md={3} align='center'>
+                            <div style={numberBoxStyle}>
+                                <div style={numberInnerBoxStyle}>
+                                    <span style={smallTitleStyle}><strong>Job Analyzed:</strong></span>
+                                    <hr style={hrStyle}></hr>
+                                    <span style={numberStyle}><strong><em>{majorSelection.commonJob}</em></strong></span>
+                                </div>
+                            </div>
+                        </Col>
+
                         <Col xs={12} md={3} align='center'>
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
@@ -123,29 +134,19 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                         <Col xs={12} md={3} align='center'>
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
-                                    <span style={smallTitleStyle}><strong>Unemp. Rate:</strong></span>
-                                    <hr style={hrStyle}></hr>
-                                    <span style={numberStyle}><strong><em>{majorSelection.unemploymentRate}</em></strong></span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col xs={12} md={3} align='center'>
-                            <div style={numberBoxStyle}>
-                                <div style={numberInnerBoxStyle}>
-                                    <span style={smallTitleStyle}><strong>Avg. Salary:</strong></span>
-                                    <hr style={hrStyle}></hr>
-                                    <span style={numberStyle}><strong><em>{majorSelection.averageSalary}</em></strong></span>
-                                </div>
-                            </div>
-                        </Col>
-
-                        <Col xs={12} md={3} align='center'>
-                            <div style={numberBoxStyle}>
-                                <div style={numberInnerBoxStyle}>
-                                    <span style={smallTitleStyle}><strong>Sector Growth:</strong></span>
+                                    <span style={smallTitleStyle}><strong>New Jobs/yr:</strong></span>
                                     <hr style={hrStyle}></hr>
                                     <span style={numberStyle}><strong><em>{majorSelection.industryGrowth}</em></strong></span>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col xs={12} md={3} align='center'>
+                            <div style={numberBoxStyle}>
+                                <div style={numberInnerBoxStyle}>
+                                    <span style={smallTitleStyle}><strong>Median Salary:</strong></span>
+                                    <hr style={hrStyle}></hr>
+                                    <span style={numberStyle}><strong><em>{majorSelection.averageSalary}</em></strong></span>
                                 </div>
                             </div>
                         </Col>
