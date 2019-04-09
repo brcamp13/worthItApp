@@ -43,7 +43,7 @@
 - [x] Write verdicts for each major based primarily on the objective metrics you researched
 - [x] Add the research information to the site
 - [x] Add a footer
-- [ ] Add custom favicon
+- [x] Add custom favicon
 - [ ] Deploy
 - [ ] Integration testing with Cypress
 - [ ] Full CI/CD pipeline
