@@ -14,6 +14,31 @@ class App extends Component {
   // List of all dropdown choices
   majorOptions = [
     {
+      key: 'Agriculture & Nat. Resources', 
+      text: 'Agriculture & Nat. Resources',
+      value: 'Agriculture & Nat. Resources', 
+    }, 
+    {
+      key: 'Architecture', 
+      text: 'Architecture',
+      value: 'Architecture', 
+    }, 
+    {
+      key: 'Area/Group Studies', 
+      text: 'Area/Group Studies',
+      value: 'Area/Group Studies', 
+    }, 
+    {
+      key: 'Art', 
+      text: 'Art',
+      value: 'Art', 
+    }, 
+    {
+      key: 'Business', 
+      text: 'Business',
+      value: 'Business', 
+    }, 
+    {
         key: 'Computer Science', 
         text: 'Computer Science',
         value: 'Computer Science', 
@@ -23,6 +48,58 @@ class App extends Component {
         text: 'Communications', 
         value: 'Communications',
     },
+    {
+      key: 'Education', 
+      text: 'Education', 
+      value: 'Education',
+    },
+    {
+      key: 'Engineering', 
+      text: 'Engineering', 
+      value: 'Engineering',
+    },
+    {
+      key: 'English', 
+      text: 'English', 
+      value: 'English',
+    },
+    {
+      key: 'Foreign Language', 
+      text: 'Foreign Language', 
+      value: 'Foreign Language',
+    },
+    {
+      key: 'Liberal Arts/Humanities', 
+      text: 'Liberal Arts/Humanities', 
+      value: 'Liberal Arts/Humanities',
+    },
+    {
+      key: 'Math & Stats', 
+      text: 'Math & Stats', 
+      value: 'Math & Stats',
+    },
+    {
+      key: 'Philosophy & Religious Studies', 
+      text: 'Philosophy & Religious Studies', 
+      value: 'Philosophy & Religious Studies',
+    },
+    {
+      key: 'Life & Physical Sciences', 
+      text: 'Life & Physical Sciences', 
+      value: 'Life & Physical Sciences',
+    },
+    {
+      key: 'Psychology', 
+      text: 'Psychology', 
+      value: 'Psychology',
+    },
+    {
+      key: 'Social Sciences', 
+      text: 'Social Sciences', 
+      value: 'Social Sciences',
+    },
+    
+    
   ]
 
 
