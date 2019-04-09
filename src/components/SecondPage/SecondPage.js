@@ -8,17 +8,17 @@ import Col from 'react-bootstrap/Col'
 
 const titleStyle = {
     fontFamily: 'Roboto Slab', 
-    fontSize: '2rem'
+    fontSize: '2.2rem'
 }
 
 const smallTitleStyle = {
     fontFamily: 'Roboto Slab', 
-    fontSize: '1.3rem'
+    fontSize: '1.45rem'
 }
 
 const verdictStyle = {
     fontFamily: 'Roboto Slab', 
-    fontSize: '1.5rem',
+    fontSize: '1.7rem',
 }
 
 const majorTextStyle = {
@@ -31,8 +31,8 @@ const majorTextRowStyle = {
 }
 
 const numberStyle = {
-    fontFamily: 'Open Sans', 
-    fontSize: '1.1rem', 
+    fontFamily: 'Roboto Mono', 
+    fontSize: '1.3rem', 
 }
 
 
@@ -54,8 +54,8 @@ const numberInnerBoxStyle = {
 }
 
 const paragraphStyle = {
-    fontFamily: 'Open Sans', 
-    fontSize: '1rem'
+    fontFamily: 'Roboto Mono', 
+    fontSize: '1.3rem'
 }
 
 const buttonStyle = {
@@ -63,7 +63,7 @@ const buttonStyle = {
     display: 'block',
     marginTop: '3rem',
     marginBottom: '5rem',
-    fontFamily: 'Open Sans'
+    fontFamily: 'Roboto Mono'
 }
 
 const containerStyle = {
@@ -85,6 +85,18 @@ const verdictContainerStyle = {
     marginTop: '2rem'
 }
 
+const footerStyle = {
+    fontFamily: 'Roboto Mono', 
+    fontSize: '1rem',
+}
+
+const pullmanStyle = {
+    color: '#981e32'
+}
+
+const githubLinkStyle = {
+    color: 'black', 
+}
 
 const SecondPage = ({ onGoHomePress, majorSelection }) => {
 
@@ -103,7 +115,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                 <Fade top>
                     <Row style={numbersRowStyle}>
                         <Col align='center'>
-                            <span style={titleStyle}><strong><em>Analysis:</em></strong></span>
+                            <span style={titleStyle}><strong>Analysis:</strong></span>
                         </Col>
                     </Row>
                 </Fade>
@@ -157,8 +169,8 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
 
                 <Fade top>
                     <Row style={numbersRowStyle}>
-                        <Col align='center' md={{ span: 4, offset: 4 }}>
-                            <span style={titleStyle}><strong><em>Our Opinion: </em></strong></span>
+                        <Col align='center' md={{ span: 6, offset: 3 }}>
+                            <span style={titleStyle}><strong>Our Opinion:</strong></span>
                             <div style={verdictContainerStyle}>
                                 <span style={verdictStyle}><strong>{majorSelection.verdict}</strong></span>
                                 <hr style={hrStyle}></hr>
@@ -175,6 +187,12 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                     style={buttonStyle}>
                     Take me back
                     </Button> 
+                </Row>
+
+                <Row style={numbersRowStyle}>
+                    <Col align='center' md={{ span: 6, offset: 3 }}>
+                        <p style={footerStyle}>Made in <a href="https://i.pinimg.com/originals/bb/09/b3/bb09b3716210747dd215f23077628214.jpg" style={pullmanStyle}>Pullman</a> by <a href="https://github.com/brcamp13/worthItApp/blob/master/README.md" style={githubLinkStyle}>me</a></p>
+                    </Col>
                 </Row>
     
             </Container>

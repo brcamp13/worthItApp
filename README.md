@@ -19,6 +19,8 @@
 
 **NOTE:** Statistics for majors that don't directly translate to a specific career have not been included in the objective metric table above. However, they are included on the website. These majors (philosophy, history, mythology, gender studies, etc.) can best be leveraged as proof of having a college degree, something that's becoming increasingly more necessary to get a non-laborious job. For most of these majors, a professional degree is required to pursue a career within the field.   
 
+## Sources of statistics: 
+
 [Career Statistics](https://www.bls.gov/ooh/home.htm)
 
 [College Major Statistics](https://nces.ed.gov/programs/digest/d17/tables/dt17_322.10.asp)
@@ -39,10 +41,14 @@
 - [x] Research information for most majors (or the most popular)
 - [x] Objective metric
 - [x] Write verdicts for each major based primarily on the objective metrics you researched
-- [ ] Add the research information to the site
+- [x] Add the research information to the site
 - [ ] Add a footer noting source of statistics, disclaimer regarding school prestige, disclaimer about college degrees in general (on onenote page)
 - [ ] Add custom favicon
 - [ ] Deploy
 - [ ] Ads/Google analytics?
+
+
+### Disclaimers/Random: 
+What you major in doesn't necessarily confine you to a certain career path. Increasingly so, possessing a college degree is just a necessary step in getting a non-laborious job. Furthermore, for the majors where a single job has been selected to be analyzed, there are assuredly other careers that exist within the field. Continuing, this website only analyzes bachelor degree recipients. Furthering your education with a master's, doctoral, or professional degree will most likely improve the likelihood of getting a job in your desired field. Also, the less your degree is associated with a single, 'designated' career, more value is placed on the prestige of your undergraduate institution by employers. Finally, if you are passionate and persistent, then your major will be worth it.
 
 

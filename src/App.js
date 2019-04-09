@@ -108,7 +108,7 @@ class App extends Component {
     {
         name: "Agriculture & Nat. Resources", 
         annualGraduates: "37,005", 
-        commonJob: "Ag. & Food Scientist", 
+        commonJob: "Ag. Scientist", 
         averageSalary: "$62,910", 
         industryGrowth: "310",
         verdict: "Not worth it:",
@@ -153,7 +153,7 @@ class App extends Component {
     {
         name: "Computer Science", 
         annualGraduates: "64,405", 
-        commonJob: "Software Developer", 
+        commonJob: "Software Dev", 
         averageSalary: "$103,560", 
         industryGrowth: "30,250",
         verdict: "Worth it:",
@@ -189,7 +189,7 @@ class App extends Component {
     {
         name: "English", 
         annualGraduates: "42,795", 
-        commonJob: "Technical Writer", 
+        commonJob: "Tech. Writer", 
         averageSalary: "$70,930", 
         industryGrowth: "570",
         verdict: "Not worth it:",
@@ -293,13 +293,13 @@ class App extends Component {
       buttonPressed: !this.state.buttonPressed, 
       dropDownSelection: "Computer Science", 
       majorObject: {
-        name: "Computer Science", 
-        annualGraduates: "100", 
-        commonJob: "2.5%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Not worth it",
-        verdictParagraph: "Software development has the highest growth rate until 2026 and the salary is very high for only having a bachelor's degree. It may be difficult getting your 'foot in the door', but once you do, it should be smooth sailing and there should be ample opportunities" 
+      name: "Computer Science", 
+      annualGraduates: "64,405", 
+      commonJob: "Software Dev", 
+      averageSalary: "$103,560", 
+      industryGrowth: "30,250",
+      verdict: "Worth it:",
+      verdictParagraph: "Computers can be used to improve and assist practically any discipline or career, meaning anywhere there exists a business, there will exist software development jobs. It is necessary for a business to remain competitive. Furthermore, the career possesses one of the highest growth rates, and the median salary is immense." 
       }
     })
   }
@@ -311,12 +311,12 @@ class App extends Component {
       dropDownSelection: "Computer Science", 
       majorObject: {
         name: "Computer Science", 
-        annualGraduates: "100", 
-        commonJob: "2.5%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Not worth it",
-        verdictParagraph: "Software development has the highest growth rate until 2026 and the salary is very high for only having a bachelor's degree. It may be difficult getting your 'foot in the door', but once you do, it should be smooth sailing and there should be ample opportunities" 
+        annualGraduates: "64,405", 
+        commonJob: "Software Dev", 
+        averageSalary: "$103,560", 
+        industryGrowth: "30,250",
+        verdict: "Worth it:",
+        verdictParagraph: "Computers can be used to improve and assist practically any discipline or career, meaning anywhere there exists a business, there will exist software development jobs. It is necessary for a business to remain competitive. Furthermore, the career possesses one of the highest growth rates, and the median salary is immense." 
       }
     }
     this.getSelection = this.getSelection.bind(this)

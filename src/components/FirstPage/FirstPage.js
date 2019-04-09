@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 
 const buttonStyle = {
-    fontFamily: 'Open Sans'
+    fontFamily: 'Roboto Mono'
 }
 
 
