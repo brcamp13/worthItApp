@@ -18,8 +18,8 @@ const FirstPage = ({ dropDownSelection, majorOptions, onButtonPress }) => {
         <div style={{
             textAlign: 'center', 
             paddingTop: '17em', 
-            border: '1rem rounded black'
-            
+            border: '1rem rounded black', 
+            marginBottom: '2rem'
         }}>
 
             <Fade bottom> 
