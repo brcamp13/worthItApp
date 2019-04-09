@@ -124,7 +124,7 @@ const SecondPage = ({ onGoHomePress, majorSelection }) => {
                         <Col xs={12} md={3} align='center'>
                             <div style={numberBoxStyle}>
                                 <div style={numberInnerBoxStyle}>
-                                    <span style={smallTitleStyle}><strong>Annual Grads:</strong></span>
+                                    <span style={smallTitleStyle}><strong>Grads/yr:</strong></span>
                                     <hr style={hrStyle}></hr>
                                     <span style={numberStyle}><strong><em>{majorSelection.annualGraduates}</em></strong></span>
                                 </div>

@@ -69,9 +69,9 @@ class App extends Component {
       value: 'Foreign Language',
     },
     {
-      key: 'Liberal Arts/Humanities', 
-      text: 'Liberal Arts/Humanities', 
-      value: 'Liberal Arts/Humanities',
+      key: 'Liberal Arts', 
+      text: 'Liberal Arts', 
+      value: 'Liberal Arts',
     },
     {
       key: 'Math & Stats', 
@@ -79,14 +79,14 @@ class App extends Component {
       value: 'Math & Stats',
     },
     {
-      key: 'Philosophy & Religious Studies', 
-      text: 'Philosophy & Religious Studies', 
-      value: 'Philosophy & Religious Studies',
+      key: 'Phil. & Relig. Studies', 
+      text: 'Phil. & Relig. Studies', 
+      value: 'Phil. & Relig. Studies',
     },
     {
-      key: 'Life & Physical Sciences', 
-      text: 'Life & Physical Sciences', 
-      value: 'Life & Physical Sciences',
+      key: 'Physical & Life Sci.', 
+      text: 'Physical & Life Sci.', 
+      value: 'Physical & Life Sci.',
     },
     {
       key: 'Psychology', 
@@ -137,7 +137,7 @@ class App extends Component {
         annualGraduates: "92,979", 
         commonJob: "Entire Sector", 
         averageSalary: "$45,250", 
-        industryGrowth: "3370",
+        industryGrowth: "3,370",
         verdict: "Not worth it:",
         verdictParagraph: "By 2026, there will be close to 1 million people with art degrees, yet only new jobs created during that entire span. It appears that it would be very challenging to get a job in art. Your best chances will be to become a teacher or graphic designer." 
     },
@@ -164,18 +164,9 @@ class App extends Component {
         annualGraduates: "92,554", 
         commonJob: "Entire Sector", 
         averageSalary: "$56,340", 
-        industryGrowth: "4320",
+        industryGrowth: "4,320",
         verdict: "Not worth it:",
         verdictParagraph: "By 2026, there will be an estimated 1 million communications graduates. In the same time period, there will be an estimated 43,000 new jobs added in the entire sector. It is certainly possible to get a job directly relating to communications, but it will probably prove to be difficult to obtain." 
-    }, 
-    {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
     }, 
     {
         name: "Education", 
@@ -183,89 +174,89 @@ class App extends Component {
         commonJob: "Teacher", 
         averageSalary: "$37,690", 
         industryGrowth: "88,890",
-        verdict: "Worth it",
+        verdict: "Worth it:",
         verdictParagraph: "Of the majors we analyzed, teaching/education is the only field where the job openings outnumber the graduates which suggests that there is a very high demand for teachers. It must also be noted that the salary for teachers is quite low for the valuable work they provide, and often-times teachers have to use their personal money to supply their classrooms as a result of inadequate funding." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Engineering", 
+        annualGraduates: "106,850", 
+        commonJob: "Engineer", 
+        averageSalary: "$79,180", 
+        industryGrowth: "19,430",
+        verdict: "Worth it:",
+        verdictParagraph: "As long as the country continues to have a desire to innovate, there will always be a need for engineers. There are many specialties within engineering so it's hard to say if a specific engineering degree will be worthwhile or not, but in general it appears that majoring in engineering would be a good financial decision." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "English", 
+        annualGraduates: "42,795", 
+        commonJob: "Technical Writer", 
+        averageSalary: "$70,930", 
+        industryGrowth: "570",
+        verdict: "Not worth it:",
+        verdictParagraph: "English is one of those majors that can be utilized in a variety of disciplines. If one plans on pursuing a career directly relating to English, it appears that it may be difficult to obtain." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Foreign Language", 
+        annualGraduates: "18,427", 
+        commonJob: "Interpreter", 
+        averageSalary: "$47,190", 
+        industryGrowth: "1,210",
+        verdict: "Worth it:",
+        verdictParagraph: "By itself, majoring in a foreign language can prove to be useful and worthwhile for a career. If obtained in parallel with another degree such as business, a foreign language degree can prove to be a differentiating factor between you and other candidates." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Liberal Arts", 
+        annualGraduates: "43,661", 
+        commonJob: "Any", 
+        averageSalary: "Varies", 
+        industryGrowth: "Varies",
+        verdict: "Could be worth it:",
+        verdictParagraph: "Those who obtain a major in one of these fields will have gained knowledge that could be of use in a variety of careers, despite there being very few jobs directly relating to the majors. The success of the graduate really depends on their persistence and choices they make in finding a career." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Math & Stats", 
+        annualGraduates: "22,777", 
+        commonJob: "Entire Sector", 
+        averageSalary: "$91,475", 
+        industryGrowth: "3,660",
+        verdict: "Worth it:",
+        verdictParagraph: "The value that common math related careers, such as actuaries and operation research analysists, provide to an organization are invaluable. The growth of these professions is on par with that of software developers, and the pay in these professions is almost equivalent." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Phil. & Relig. Studies", 
+        annualGraduates: "10,157", 
+        commonJob: "Any", 
+        averageSalary: "Varies", 
+        industryGrowth: "Varies",
+        verdict: "Could be worth it:",
+        verdictParagraph: "The amount of graduates in comparison to the number of new jobs annually is favorable. However, the umbrella of life & physical sciences covers many varying disciplines, so your success in this sector will rely upon which specific major you choose." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Physical & Life Sci.", 
+        annualGraduates: "30,477", 
+        commonJob: "Varies", 
+        averageSalary: "$64,510", 
+        industryGrowth: "10,010",
+        verdict: "Could be worth it:",
+        verdictParagraph: "The amount of graduates in comparison to the number of new jobs annually is favorable. However, the umbrella of life & physical sciences covers many varying disciplines, so your success in this sector will rely upon which specific major you choose." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Psychology", 
+        annualGraduates: "117,440", 
+        commonJob: "Any", 
+        averageSalary: "Varies", 
+        industryGrowth: "Varies",
+        verdict: "Could be worth it:",
+        verdictParagraph: "In order to practice psychology professionally, you will need a professional degree. Otherwise, the opportunities for psychology majors within the field are relatively limited, despite there being so many graduates annually." 
     }, 
     {
-        name: "Communications", 
-        annualGraduates: "200", 
-        commonJob: "69%", 
-        averageSalary: "$69,000", 
-        industryGrowth: "24%",
-        verdict: "Worth it",
-        verdictParagraph: "It's not a stupid idea so don't do it." 
+        name: "Social Sciences", 
+        annualGraduates: "161,230", 
+        commonJob: "Any", 
+        averageSalary: "Varies", 
+        industryGrowth: "Varies",
+        verdict: "Could be worth it:",
+        verdictParagraph: "Those who obtain a major in one of these fields will have gained knowledge that could be of use in a variety of careers, despite there being very few jobs directly relating to the majors. The success of the graduate really depends on their persistence and choices they make in finding a career." 
     }, 
   ]
 
