@@ -42,9 +42,11 @@
 - [x] Objective metric
 - [x] Write verdicts for each major based primarily on the objective metrics you researched
 - [x] Add the research information to the site
-- [ ] Add a footer noting source of statistics, disclaimer regarding school prestige, disclaimer about college degrees in general (on onenote page)
+- [x] Add a footer
 - [ ] Add custom favicon
 - [ ] Deploy
+- [ ] Integration testing with Cypress
+- [ ] Full CI/CD pipeline
 - [ ] Ads/Google analytics?
 
 

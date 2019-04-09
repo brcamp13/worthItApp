@@ -139,7 +139,7 @@ class App extends Component {
         averageSalary: "$45,250", 
         industryGrowth: "3,370",
         verdict: "Not worth it:",
-        verdictParagraph: "By 2026, there will be close to 1 million people with art degrees, yet only new jobs created during that entire span. It appears that it would be very challenging to get a job in art. Your best chances will be to become a teacher or graphic designer." 
+        verdictParagraph: "By 2026, there will be close to 1 million people with art degrees, yet only 33,700 new jobs created during that entire span. It appears that it would be very challenging to get a job in art. Your best chances will be to become a teacher or graphic designer." 
     },
     {
         name: "Business", 
@@ -153,7 +153,7 @@ class App extends Component {
     {
         name: "Computer Science", 
         annualGraduates: "64,405", 
-        commonJob: "Software Dev", 
+        commonJob: "Software Dev.", 
         averageSalary: "$103,560", 
         industryGrowth: "30,250",
         verdict: "Worth it:",
@@ -295,7 +295,7 @@ class App extends Component {
       majorObject: {
       name: "Computer Science", 
       annualGraduates: "64,405", 
-      commonJob: "Software Dev", 
+      commonJob: "Software Dev.", 
       averageSalary: "$103,560", 
       industryGrowth: "30,250",
       verdict: "Worth it:",
@@ -312,7 +312,7 @@ class App extends Component {
       majorObject: {
         name: "Computer Science", 
         annualGraduates: "64,405", 
-        commonJob: "Software Dev", 
+        commonJob: "Software Dev.", 
         averageSalary: "$103,560", 
         industryGrowth: "30,250",
         verdict: "Worth it:",
