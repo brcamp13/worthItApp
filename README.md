@@ -44,12 +44,14 @@
 - [x] Add the research information to the site
 - [x] Add a footer
 - [x] Add custom favicon
-- [x] Deploy
-- [ ] Re-center page1 text as it appear to be a bit off-center when viewed on mobile
+- [x] Deploy (deployed with AWS amplify)
+- [ ] Re-center page1 text as it appear to be a bit off-center when viewed on mobile 
 - [x] Make the number boxes dynamic in size as there appears to be some issues with mobile
 - [ ] Integration testing with Cypress
-- [ ] Full CI/CD pipeline
-- [ ] Ads/Google analytics?
+- [ ] Full CI/CD pipeline (CD currently in-place as it is an inherent feature of AWS amplify)
+- [ ] Ads?
+- [x] Google analytics
+- [ ] Get images for open graph/twitter meta tags
 
 
 ### Disclaimers/Random: 
