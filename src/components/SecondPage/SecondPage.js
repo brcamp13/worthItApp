@@ -44,9 +44,10 @@ const numberBoxStyle = {
     borderRadius: '25px',
     backgroundColor: 'rgba(255, 255, 255, 0.25)',
     padding: '15px', 
-    width: '175px',
-    height: '130px',
-    marginTop: '1.1rem'
+    width: '85%',
+    height: '85%',
+    marginTop: '1.1rem', 
+    marginBottom: '1.1rem'
 }
 
 const numberInnerBoxStyle = {
